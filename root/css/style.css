@@ -1,0 +1,145 @@
+.html {
+    background-size: cover;
+    background-attachment: scroll;
+    background-color:snow;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+h1,h2,p {
+    color: snow;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 50px;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper { 
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: auto;
+}
+
+navigation {
+    height:60px;
+    text-align:center;
+    padding:5px;
+    background-color: snow;
+    text-decoration: none; 
+    font-size: 15px; 
+    font-weight: 200;
+    background-attachment: fixed;
+}
+
+.navigation a {
+    color:black;
+    text-decoration: none;
+    margin-left:60px;
+    text-overflow: clip;
+    width: 50px;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.header { 
+    height: 650px;
+    background-image: url(../images/Photo-by-Foto-Pettine-on-Unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 45px 20px 20px 45px;
+}
+
+.header h2 {
+    font-weight: 150;
+    font-size: 30px;
+    margin-bottom: 250px
+
+}
+
+.header h1 {
+    margin-top: 430px;
+    font-weight: 450;
+    font-size: 60px;
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+.main-contents h1 {
+    color: #543737;
+    font-size: 35px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.main-contents p {
+    color: #5b4f4f;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 200px;
+    width: 70%;
+}
+
+.row {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.column {
+    flex: 70%;
+    width: 100%;
+    padding: 0 50px;
+    margin: auto;
+}
+.row img {
+    width: 500px;
+    
+}
+
+.contents h1{
+    color: #543737;
+    font-size: 35px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.contents p {
+    color: #5b4f4f;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    margin: 100px;
+    margin-left: 200px;
+    width: 70%;
+}
+
+.row1 {
+    display:flex;
+    width: 70%;
+    margin: 100px 120px;
+}
+
+.row1 img {
+    width: 400px;
+}
+
+.footer {
+    font-size: 15px;
+    font-family: 'Rajdhani', sans-serif;
+    color: snow;
+    background-color: black;
+    height: 30px;
+    text-align: end;
+    
+}
+
+/*stock photo on unsplash*/

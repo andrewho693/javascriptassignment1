@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> ANDREW'S WEDDING PHOTOS</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=-1">
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+    
+
+
+<body>
+    <!--this contain the whole contents of the website-->
+    <div class="wrapper">
+        
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+        
+        <!--this is the navigation-->
+        <div class="navigation">
+            <a href="index.html">HOME</a>
+            <a href="aboutme.html">ABOUT ME</a>
+            <a href="galleries.html">GALLERIES</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+        
+        <!--this is the header-->
+        <div class="header">
+            <h1 id="flashingText">Your Dream Photography</h1>
+            <h2> For the adventureous at heart</h2>
+        </div>
+        
+        <!---->
+        <div class="main-contents">
+            <h1 id="specialHeadings" style="color: #543737">Capturing Your Journey</h1>
+            <p id="specialParagraph" style="background-color: white"> Lorem ipsum dolor sit amet, at his illud fugit scripserit. Nisl corpora deserunt ad eam. An mei aliquam admodum, vim ea aeque antiopam, option epicuri cu has. Eu duo movet audiam integre, nonumes platonem reformidans et vis.
+            </p>
+            
+            <!--this is the grid of pictures-->
+            <div class="gallery">
+                <div class="row">
+                    <div class="collumn">
+                        <div><img src="images/Photo-by-Hisu-lee-on-Unsplash.jpg" alt="html"></div>
+                        <div><img src="images/Photo-by-Isaiah-Rustad-on-Unsplash.jpg" alt="html"></div>
+                        <div><img src="images/Photo-by-Nathan-Dumlao-on-Unsplash.jpg" alt="html"></div>
+                    </div>
+                        
+                    <div class="collumn">
+                        <div><img src="images/Photo-by-Samantha-Gades-on-Unsplash.jpg" alt="html"></div>
+                        <div><img src="images/allef-vinicius-edmoMowX-N4-unsplash.jpg" alt="html"></div>
+                        <div><img src="images/Photo-by-Vitor-Pinto-on-Unsplash1.jpg" alt="html"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contents">
+            <h1 id="specialSecondHeadings" style="color: #543737">Behind the Lens</h1>
+            <p id="specialSecondParagraph" style="background-color: white">Lorem ipsum dolor sit amet, at his illud fugit scripserit. Nisl corpora deserunt ad eam. An mei aliquam admodum, vim ea aeque antiopam, option epicuri cu has. Eu duo movet audiam integre, nonumes platonem reformidans et vis.
+
+                Ei congue possit liberavisse nam, augue singulis has ne. Et prima decore utroque mea, vis eius rebum ex. Ex mel eirmod neglegentur, et quo dico voluptua quaerendum. Qui cu ferri sadipscing. Nulla veritus maiorum ea cum, sit quem putant elaboraret ei.
+            </p>    
+        </div>
+        <div class="contents1">
+            <div class="row1">
+                <div class="collumn">
+                    <img id="pic" onmouseover="newPic()" onmouseout="previousPic()" src="images/analise-benevides-gWedi4SWsHQ-unsplash.jpg"; alt="picture changing">  
+                </div>
+                <div class="collumn">
+                    <img id="pic1" onmouseover="newPic1()" onmouseout="previousPic2()" src="images/bin-thi-u-owjuDIIzUbQ-unsplash.jpg"; alt="picture changing">
+                </div>
+                <div class="collumn">
+                    <img id="pic2" onmouseover="newPic2()" onmouseout="previousPic3()" src="images/jonathan-borba-tmFBmZgMkgo-unsplash.jpg"; alt="picture changing">
+                </div>
+            </div>
+            
+            <!--Java Script-->
+        <script>
+            
+            //blinking text
+            setInterval(function(){
+					var element = document.getElementById('flashingText');
+					var colors =  ["white","lightGrey","grey","darkGrey"];	
+					var maxvalue = colors.length;
+					var randindex = Math.floor(Math.random()*Math.floor(maxvalue));
+				    element.style.color = colors[randindex];
+					},500);
+            
+            //reference: 
+            //week 4 control example
+            //to change the color of the tittle
+            //use the effect of difference shades of grey to make the tittle more fun
+            //retrieved from: prof- Christine
+            
+            //it shows the alert when you load the website
+            alert("Welcome to Your Dream Photos");
+            
+            //to change the color of the heading from grey to darkred
+            var headings;
+            headings = document.getElementById("specialHeadings");
+            headings.style.color = "#2a2a2a";
+            document.getElementById("specialHeadings").onmousemove = function()
+            {this.style.color="darkRed";}
+            console.log (specialHeadings);
+            
+            //to change the color of the heading from grey to darkred
+            headings = document.getElementById("specialSecondHeadings");
+            headings.style.color = "#2a2a2a";
+            document.getElementById("specialSecondHeadings").onmousemove = function()
+            {this.style.color="darkRed";} 
+            console.log (specialSecondHeadings);
+            //to change the background color of the paragraph from white to lightgrey
+            paragraph = document.getElementById("specialParagraph");
+            paragraph.style.backgroundColor = "white";
+            document.getElementById("specialParagraph").onmousemove = function()
+            {this.style.backgroundColor="lightGrey";}
+            console.log (specialParagraph);
+            
+            //to change the background color of the paragraph from white to lightgrey
+            paragraph = document.getElementById("specialSecondParagraph");
+            paragraph.style.backgroundColor = "white";
+            document.getElementById("specialSecondParagraph").onmousemove = function()
+            {this.style.backgroundColor="lightGrey";}
+            console.log (specialSecondParagraph);
+            
+            //to chang the pictures
+            function newPic()
+            {
+              document.getElementById("pic").src = "images/jonathan-borba-eg-72fI9wK4-unsplash.jpg"   
+            }
+            
+            function previousPic()
+            {
+              document.getElementById("pic").src = "images/analise-benevides-gWedi4SWsHQ-unsplash.jpg"  
+            }
+            
+             function newPic2()
+            {
+              document.getElementById("pic1").src = "images/adrianna-van-groningen-0Gld1sSKs0c-unsplash.jpg"   
+            }
+            
+            function previousPic2()
+            {
+              document.getElementById("pic1").src = "images/bin-thi-u-owjuDIIzUbQ-unsplash.jpg"  
+            }
+            
+             function newPic()
+            {
+              document.getElementById("pic2").src = "images/anna-utochkina-QUi84upBhoc-unsplash.jpg"   
+            }
+            
+            function previousPic()
+            {
+              document.getElementById("pic2").src = "images/jonathan-borba-tmFBmZgMkgo-unsplash.jpg"  
+            }
+        </script>
+            
+        </div>
+        
+        <div class="footer">
+            <h4>&copy;20XX Wedding Photography by Andrew</h4>
+        </div>
+    </div>
+</body>
+</html>
